@@ -9,4 +9,5 @@ const minus = (a, b) => {
 const mul = (a, b) => {
     return a*b;
 }
-module.exports = {add, minus, mul};
+const name = 'Vikalp Mishra'
+module.exports = {add, minus, mul , name};
