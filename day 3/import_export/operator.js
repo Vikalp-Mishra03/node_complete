@@ -2,8 +2,11 @@ const add = (a, b) => {
     return a + b
 }
 
-const name = 'Vikalp Mishra'
+const minus = (a, b) => {
+    return a - b
+}
 
-
-module.exports = add
-module.exports = name
+const mul = (a, b) => {
+    return a*b;
+}
+module.exports = {add, minus, mul};
