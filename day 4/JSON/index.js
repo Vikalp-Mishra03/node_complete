@@ -26,7 +26,7 @@ const bioData = {
 1) convert to JSOn
 2) dusre file mai add krna
 3) readfile
-4) again convert back to js abj original
+4) again convert back to js to abj original
 5) console.log 
 */
 
@@ -41,7 +41,12 @@ fs.writeFile('JSON1.json', jsonData, (err) => {
 
 //  third step
 
-fs.readFile('JSON1.json','utf-8', (err, data)=>{
+fs.readFile('JSON1.json', 'utf-8', (err, data) => {
     console.log(data)
     console.log(err)
+    
+    // fourth step
+    const objData = JSON.parse(data)
+    console.log(objData)
 })
+
