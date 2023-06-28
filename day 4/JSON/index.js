@@ -39,3 +39,9 @@ fs.writeFile('JSON1.json', jsonData, (err) => {
     console.log('done')
 })
 
+//  third step
+
+fs.readFile('JSON1.json','utf-8', (err, data)=>{
+    console.log(data)
+    console.log(err)
+})
