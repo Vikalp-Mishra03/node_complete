@@ -2,6 +2,8 @@
 
 // JSON is often used when data is sent from a server to a web page
 
+const fs = require('fs')
+
 const bioData = {
     name: 'Vikalp',
     age: 26,
@@ -9,10 +11,25 @@ const bioData = {
 };
 
 
-// object ko jab JSON mai create krna hai tab stringify function ka use karenge 
-const jsonData = JSON.stringify(bioData);
-console.log(jsonData)
+// // object ko jab JSON mai create krna hai tab stringify function ka use karenge 
+// const jsonData = JSON.stringify(bioData);
+// console.log(jsonData)
 
-// JSON ko object mai convert krne ke liye parse function ka use karenge
-const objData = JSON.parse(jsonData)
-console.log(objData)
+// // JSON ko object mai convert krne ke liye parse function ka use karenge
+// const objData = JSON.parse(jsonData)
+// console.log(objData)
+
+
+// challenge 
+
+/*
+1) convert to JSOn
+2) dusre file mai add krna
+3) readfile
+4) again convert back to js abj original
+5) console.log 
+*/
+
+// first step
+const jsonData = JSON.stringify(bioData)
+
