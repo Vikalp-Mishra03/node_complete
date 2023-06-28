@@ -33,3 +33,9 @@ const bioData = {
 // first step
 const jsonData = JSON.stringify(bioData)
 
+// second step 
+fs.writeFile('JSON1.json', jsonData, (err) => {
+    console.log(err)
+    console.log('done')
+})
+
